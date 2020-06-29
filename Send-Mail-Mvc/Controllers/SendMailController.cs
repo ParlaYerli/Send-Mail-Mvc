@@ -33,7 +33,7 @@ namespace Send_Mail_Mvc.Controllers
             smtp.Port = 587;
             smtp.UseDefaultCredentials = true;
             smtp.EnableSsl = true;
-            smtp.Credentials = new System.Net.NetworkCredential("yerliparla@gmail.com", "PY147py*");
+            smtp.Credentials = new System.Net.NetworkCredential("yerliparla@gmail.com", "yourpassword");
             smtp.Send(mail);
             ViewBag.message = "The mail Has Been Send To" + email.To + " Successfully..!!!";
             return View();
